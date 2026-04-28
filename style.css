@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevents body from scrolling */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+h1 {
+    color: #007bff;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="file"] {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.feature-list-container {
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+li .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+li .feature-text {
+    font-size: 14px;
+    max-height: 50px;
+    overflow: auto;
+    flex: 1; /* Allows text to take available space */
+}
+
+li .actions {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; /* Adds some space between text and actions */
+}
+
+li .actions button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+li .actions button:hover {
+    color: red;
+}
+
+li .note {
+    width: 95%;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+li .move-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px; /* Adds some space between text and move buttons */
+}
+
+.credit {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.export-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.export-btn {
+    background-color: #28a745;
+}
+
+.export-btn:hover {
+    background-color: #218838;
+}
+
+.move-buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.move-buttons button:hover {
+    color: #007bff;
+}
